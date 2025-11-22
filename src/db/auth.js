@@ -57,10 +57,11 @@ export async function loginWithGoogle() {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
-      redirectTo: "http://localhost:5173/dashboard", // adjust if needed
+      redirectTo: "https://road-url-3.vercel.app/dashboard", // Redirection google
     },
   });
 
   if (error) throw new Error(error.message);
   return data;
 }
+
