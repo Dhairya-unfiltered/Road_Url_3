@@ -24,7 +24,7 @@ export default function Landing() {
               Generate a placeholder link to submit before the deadline — update it with the real link later, without ever changing the submitted link.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center pt-4">
+            <div className="flex sm:flex-row justify-center pt-4">
               <Button asChild size="lg" className="text-lg h-12 px-8 bg-gradient-to-r from-[#9a6df0] to-[#377dff]">
                 <Link to="/auth">Get Started <Zap className="h-6 w-6 text-primary0" /></Link>
               </Button>
@@ -171,3 +171,4 @@ export default function Landing() {
     </div>
   );
 }
+
